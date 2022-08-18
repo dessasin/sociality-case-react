@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "950738c5-c009-4e70-ade5-4418ac3d48ea",
+		"name": "Sociality.io Example API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7735308"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-ACCESS-KEY",
+						"value": "$2b$10$smpejxmp4gmvulslxzJAs.gQ4v4PXntI/WeSCOOFXAd3KZl7LFJcW",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.jsonbin.io/v3/b/62ed1523e13e6063dc6cd5ee",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jsonbin",
+						"io"
+					],
+					"path": [
+						"v3",
+						"b",
+						"62ed1523e13e6063dc6cd5ee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

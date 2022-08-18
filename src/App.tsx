@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import NavigationMenu from "./components/navigationMenu/Navigation";
+import ClientMenu from "./components/clientMenu/ClientMenu";
+import logo from './assets/logo.png'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        // components will be come here
+        <main className="app">
+            <aside className="app_aside">
+                <div className="logo">
+                    <img src={logo} alt='logo' />
+                </div>
+                <div className="app_aside_menus">
+                    <ClientMenu></ClientMenu>
+                    <NavigationMenu></NavigationMenu>
+                </div>
+            </aside>
+            <div className='app_content'>aa </div>
+        </main>
+    );
 }
 
 export default App;
