@@ -1,0 +1,51 @@
+.sociality_layout {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 274px 1.1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-areas:
+        "aside_menus sociality_header sociality_header"
+        "aside_menus main_content main_content";
+
+    .sociality_aside {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        .logo {
+            background-color: #31363b;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 142px;
+                height: 28px;
+            }
+        }
+    }
+    .aside_menus {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        grid-area: aside_menus;
+
+        .aside_nav {
+            background-color: #393d42;
+            width: 100%;
+        }
+        .aside_clients {
+            width: 66px;
+            background-color: #2a2f33;
+        }
+    }
+    .sociality_header {
+        grid-area: sociality_header;
+    }
+    .main_content {
+        grid-area: main_content;
+    }
+}
