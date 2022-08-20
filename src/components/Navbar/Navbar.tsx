@@ -7,11 +7,11 @@ export default function Navbar() {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className='navbar'>
       <>
         {
           navItems.map((navitem:any, index:number) => {
-            return <NavItem key={navitem.idPrefix + index} id={navitem.idPrefix + index} label={navitem.label} select={navitem.select} childs={navitem.childs} onClick={()=>{
+            return <NavItem key={navitem.idPrefix + index} id={navitem.idPrefix + index} label={navitem.label} select={navitem.select} icon={navitem.icon} childs={navitem.childs} onClick={()=>{
               dispatch(setNavItemSelect(index))
             }}/>
           })

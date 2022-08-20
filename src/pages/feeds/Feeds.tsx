@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, {useLayoutEffect} from 'react'
 import { getAllFeeds } from '../../utils/api'
 import { useDispatch,useSelector} from 'react-redux';
 import { setFeeds } from '../../stores/feeds';
@@ -14,7 +14,6 @@ export default function Feeds() {
             }
             )()
         },[])
-    console.log(feeds);
 return (
     <div>feeds</div>
 )

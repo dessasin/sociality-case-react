@@ -1,0 +1,21 @@
+.navSubItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:16px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    &_bullet{
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: red;
+    }
+    a{
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffff;
+    }
+
+}

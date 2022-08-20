@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import './NavSubItem.scss'
+
 export interface navSubItemProps{
     path:string,
     label:string,
@@ -10,7 +12,10 @@ export interface navSubItemProps{
 export default function NavSubItem(props:navSubItemProps) {
   return (
     <>
-        <Link to={props.path} className={`navSubItem ${props.selected ? 'selected' :  ''}` }>{props.label}</Link>
+        <span  className={`navSubItem ${props.selected ? 'selected' :  ''}` }>
+        <span className='navSubItem_bullet'></span>
+        <Link to={props.path}>{props.label}</Link>
+        </span>
     </>
   )
 }
