@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.scss";
 import Router from './components/Router/Router'
-import Layout from './components/layout/Layout'
+import Layout from './components/Layout/Layout'
 import routes from "./routes";
 
-function App() {
+function App()
+{
     return (
-        // components will be come here
-        <Layout children={<Router/>} routes=''/>
-
+        <Layout/>
     );
 }
 

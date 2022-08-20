@@ -1,12 +1,13 @@
-import React from 'react'
 import logo from '../../assets/logo.png'
-import './Layout.scss';
-interface layoutProps {
-  children?: React.ReactElement,
-  routes:any,
-}
+import { Link } from 'react-router-dom';
+import Router from '../Router/Router';
+import ClientMenu from '../ClientMenu/CLinetMenu'
+import Navbar from '../Navbar/Navbar'
 
-export default function Layout(props: layoutProps) {
+import './Layout.scss';
+
+export default function Layout() {
+
   return (
     <div className='sociality_layout'>
       <aside className='sociality_aside'>
@@ -15,16 +16,16 @@ export default function Layout(props: layoutProps) {
         </div>
         <div className="aside_menus">
           <div className="aside_clients">
-          a
+            <ClientMenu/>
           </div>
           <div className="aside_nav">
-            b
+            <Navbar/>
           </div>
         </div>
-      </aside>
+      </aside >
       <main>
-        {props.children}
+        <Router/>
       </main>
-    </div>
+    </div >
   )
 }

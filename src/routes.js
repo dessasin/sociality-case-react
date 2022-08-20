@@ -1,7 +1,8 @@
+import Feeds from "./pages/feeds/Feeds";
 const routes = [
     {
         path:'/',
-        element:<div>Asd</div>
+        element:<Feeds/>
     },
     {
         path:'/about',
