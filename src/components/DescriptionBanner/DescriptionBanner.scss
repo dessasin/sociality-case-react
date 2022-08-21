@@ -1,0 +1,30 @@
+.description_banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    grid-area:sociality_header;
+    padding:29px 51px 0 45px;
+    margin-bottom: 29px;
+
+    ul{
+        display: flex;
+        list-style:none;
+        gap: 20px;
+        li{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .status_badge{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+    img{
+        align-self: flex-end;
+    }
+
+}

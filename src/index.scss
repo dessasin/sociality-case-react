@@ -61,6 +61,23 @@ select {
   font: inherit;
 }
 
+
+.color-published{
+  background-color: #ACACAC;
+}
+.color-schduled{
+  background-color: #3AC183;
+}
+.color-need-approval{
+  background-color: #F7BF38;
+}
+.color-error{
+  background-color: #FB6450;
+}
+.color-note{
+  background-color: #67B1F2;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {

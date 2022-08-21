@@ -10,12 +10,19 @@
         height: 5px;
         border-radius: 5px;
         display: inline-block;
-        background-color: red;
+        margin-left: 14px;
+        background-color: #fff;
     }
     a{
         font-weight: 500;
         text-decoration: none;
         color: #ffff;
+        &:hover{
+            color:#FB6450 ;
+        }
+    }
+    &:hover > &_bullet{
+        background-color:#FB6450 ;
     }
 
 }

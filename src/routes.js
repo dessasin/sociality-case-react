@@ -2,23 +2,11 @@ import Feeds from "./pages/feeds/Feeds";
 const routes = [
     {
         path:'/',
-        element:<Feeds/>
+        element:<>Welcome to Home</>
     },
     {
-        path:'/about',
-        element:<div>123</div>
+        path:'/feeds',
+        element:<Feeds/>
     },
-    // {
-    //     path:'/',
-    //     element:<></>
-    // },
-    // {
-    //     path:'/',
-    //     element:<></>
-    // },
-    // {
-    //     path:'/',
-    //     element:<></>
-    // },
 ]
 export default routes;

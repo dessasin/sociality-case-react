@@ -15,7 +15,20 @@ export const site = createSlice({
           label: 'Summary',
           select: false,
           icon:rise,
-          childs:[]
+          childs:[
+            {
+              label:'Hi 🙋‍♂️.',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+            {
+              label:'I\'m glad to meet you. 🎉',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+          ]
         },
         {
           idPrefix: 'navItem',
@@ -26,7 +39,7 @@ export const site = createSlice({
             {
               label:'Compose',
               idPrefix:'navSubItem',
-              path:'/compose'
+              path:'/'
 
             },
             {
@@ -41,29 +54,55 @@ export const site = createSlice({
           label: 'Engage',
           select: false,
           icon:engage,
-          childs:[]
+          childs:[
+            {
+              label:'I hope we will meet together. 🤗',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+          ]
         },
         {
           idPrefix: 'navItem',
           label: 'Listen',
           select: false,
           icon:listen,
-          childs:[]
+          childs:[
+            {
+              label:'I ❤️  frontend .',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+            {
+              label:'And also love goats. 🐐',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+          ]
         },
         {
           idPrefix: 'navItem',
           label: 'Report',
           select: false,
           icon:report,
-          childs:[]
+          childs:[
+            {
+              label:'Lets connect https://dessasin.dev.',
+              idPrefix:'navSubItem',
+              path:'/'
+
+            },
+          ]
         },]
 
     },
     reducers:{
       setNavItemSelect(state, action){
-        // state.navItems.map(x=> x.select = false)
+        state.navItems.map(x=> {return x.select = false})
         state.navItems[action.payload].select = !state.navItems[action.payload].select
-        console.log(state.navItems[action.payload].select);
       }
     }
 

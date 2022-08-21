@@ -1,5 +1,6 @@
 import NavItem from '../NavItem/NavItem'
 import './Navbar.scss'
+import NavbarNotifications from '../NavbarNotifications/NavbarNotifications';
 import { useSelector,useDispatch } from 'react-redux'
 import { setNavItemSelect } from '../../stores/site';
 export default function Navbar() {
@@ -9,6 +10,7 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <>
+      <NavbarNotifications/>
         {
           navItems.map((navitem:any, index:number) => {
             return <NavItem key={navitem.idPrefix + index} id={navitem.idPrefix + index} label={navitem.label} select={navitem.select} icon={navitem.icon} childs={navitem.childs} onClick={()=>{
