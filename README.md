@@ -15,10 +15,10 @@ If you wanna test this app live, go check this link below; <br>
 
 ### Install project dependencies with;
 ```bash
-    yarn  && npm install 
+    yarn
 ```
 ### Start project with;
 ```bash
-    yarn start && npm run dev
+    yarn start
 ```
 
